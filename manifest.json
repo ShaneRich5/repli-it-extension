@@ -14,5 +14,9 @@
     "content_scripts": [{
         "js": ["gist.js"],
         "matches": ["https://gist.github.com/*"]
+    }, 
+    {
+        "js": ["replit.js"],
+        "matches": ["https://repl.it/languages/*"]
     }]
 }
