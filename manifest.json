@@ -8,11 +8,11 @@
     "browser_action": {
         "default_icon": "replit.png",
         "default_popup": "popup.html",
-        "default_title": "Click here!"
+        "default_title": "Gists here!"
     },
 
-    "permissions": [
-        "activeTab",
-        "https://ajax.googleapis.com/"
-    ]
+    "content_scripts": [{
+        "js": ["gist.js"],
+        "matches": ["https://gist.github.com/*"]
+    }]
 }
